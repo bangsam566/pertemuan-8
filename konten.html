@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+      background-image: url('https://global.ac.id/wp-content/uploads/2021/11/logo-global-institute-type-2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #000; /* fallback jika gambar gagal dimuat */
+    }
+
+    /* Overlay gelap agar teks tetap jelas */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(145, 149, 149, 0.6); /* atur transparansi overlay */
+      z-index: 0;
+    }
+
+    h2, p {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      color: #00bfff;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Selamat Datang!</h2>
+  <p>Silakan pilih menu di sebelah kiri.</p>
+</body>
+</html>
